@@ -31,6 +31,7 @@ def main():
 
 
 def get_valid_score():
+    """Get a valid score input"""
     score = input("Enter score: ")
     while float(score) < 0 or float(score) > 100:
         print("Invalid score")
@@ -49,6 +50,7 @@ def determine_status(score):
 
 
 def show_stars(score):
+    """Show stars as many as score length"""
     for i in range(len(score)):
         print("*", end='')
     print()
