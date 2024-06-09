@@ -14,7 +14,7 @@ print(random.uniform(2.5, 5.5))  # line 3
 # Could line 2 have produced a 4?
 # 5
 # 3, 9
-# No, 4 is not an odd between 3 to 9
+# No, 4 is not an odd between 3 and 9
 
 # What did you see on line 3?
 # What was the smallest number you could have seen, what was the largest?
