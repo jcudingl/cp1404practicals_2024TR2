@@ -1,3 +1,6 @@
+VINTAGE_YEAR = 50
+
+
 class Guitar:
     """Represent a guitar object."""
 
@@ -31,4 +34,4 @@ class Guitar:
 
         :return:boolean of guitar is 50 or more years old, or not
         """
-        return self.get_age() >= 50
+        return self.get_age() >= VINTAGE_YEAR
