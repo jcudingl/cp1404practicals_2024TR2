@@ -23,6 +23,10 @@ class Guitar:
         """
         return f'{self.name} ({self.year}) : ${self.cost}'
 
+    def __lt__(self, other):
+        """Return less than value"""
+        return self.year < other.year
+
     def get_age(self):
         """Get the age of guitar.
 
