@@ -4,6 +4,7 @@ FILE_NAME = 'guitars.csv'
 
 
 def main():
+    """Main function of this project"""
     guitars = []
     with open("guitars.csv", "r") as in_file:
         for line in in_file:
@@ -12,6 +13,9 @@ def main():
             guitars.append(guitar)
 
     show_current_guitar(guitars)
+    sorted_guitars = sorted(guitars)
+    print("\nAfter Sorted\n")
+    show_current_guitar(sorted_guitars)
 
     add_new_guitars(guitars)
 
@@ -21,15 +25,13 @@ def main():
 
 
 def show_current_guitar(guitars):
+    """Print current guitar in list"""
     for guitar in guitars:
-        print(guitar)
-    sorted_guitars = sorted(guitars)
-    print("\nAfter Sorted\n")
-    for guitar in sorted_guitars:
         print(guitar)
 
 
 def add_new_guitars(guitars):
+    """Add new guitars to list"""
     name = input("Name: ")
     while name != "":
         year = int(input("Year: "))
